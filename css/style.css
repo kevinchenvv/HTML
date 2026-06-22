@@ -1,0 +1,91 @@
+body {
+    width: 1200px;
+    max-width: 1440px;
+    min-height: 1140px;
+
+}
+
+nav {
+    width: auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E293B;
+}
+
+.ul1 li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li a:hover {
+    background-color:#111111;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    "left right"
+    "project-title project-title"
+    "project-1 project-2"
+    "textblock textblock";
+    grid-template-columns: 1fr 1fr;
+    background-color: #FDFBF7;
+    text-align: center;
+}
+.container section.left {
+    grid-area: left;
+}
+.container section.right {
+    grid-area: right;
+}
+.container div.project-title {
+    grid-area: project-title;
+}
+.container section.project1 {
+    grid-area: project1;
+    justify-content: center;
+    align-items: center;
+}
+.container section.project2 {
+    grid-area: project2;
+}
+.project-1 {}
+header h1 {
+    text-align: center;
+}
+.project h2 {
+    text-align: center;
+}
+.textcenter {
+    text-align: center;
+}
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    box-sizing: border-box;
+    margin:0 20px 0 20px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+h2 {
+    color: #475569;
+}
+#say textarea {
+    width: 200px;
+    height: 50%;
+}
