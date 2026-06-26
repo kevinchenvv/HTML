@@ -9,13 +9,13 @@
   <body>
     <header>
         <h1>陳柏宇</h1>
-        <input type="checkbox" id="menu_control">
-        <label for="menu_control" class="menuBtn"></label>
+        
         <nav>
             <ul class="ul1">
-                <li><a href="#">關於我</a></li>
-                <li><a href="#">技能棧</a></li>
-                <li><a href="#project">作品集</a></li> 
+                <li><a href="#" class="li1">關於我</a></li>
+                <li><a href="#" class="li2">技能棧</a></li>
+                <li><a href="#project" class="li3">作品集</a></li> 
+                <li><a href="#talk" class="li3">資安課程報名表</a></li> 
             </ul>
         </nav>
     </header>
@@ -63,6 +63,16 @@
                     <label for="email">email: </label>
                     <input type="email" id="email" name="email" required>
                     <br><br>
+                    <label for="InfoSec">您是否上過資安課程</label>
+                    <input type="checkbox" name="InfoSec" id="InfoSec">
+                    <br><br>
+                    <label for="use">上課用途</label>
+                    <select id="use">
+                        <option value="">--請選擇--</option>
+                        <option value="study">學習</option>
+                        <option value="work">工作</option>
+                    </select>
+                    <br><br>
                     <label for="send">備註 : </label>
                     <textarea name="send" id="send" rows="5" cols="33"></textarea>
                     <br>
@@ -74,7 +84,7 @@
             </footer>
     </main>
     
-    
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
 
